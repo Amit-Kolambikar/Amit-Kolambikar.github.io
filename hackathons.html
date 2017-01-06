@@ -1,0 +1,10 @@
+---
+layout: collection
+collection: hackathons
+---
+
+<div class="boxes">
+    {% for list in site.hackathons reversed %}
+    {% include box.html page=list %}
+    {% endfor %}
+</div>

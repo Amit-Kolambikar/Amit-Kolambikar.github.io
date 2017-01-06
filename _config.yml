@@ -1,0 +1,97 @@
+meta:
+    title: "Amit Kolambikar"
+    description: "Hey there!  I'm Amit Kolambikar, a Frontend Engineer with a great taste in UX Design.  Let's get in touch!"
+    facebook_image: "/img/cover.png"
+    twitter_image: "/img/cover.png"
+    image: "/img/cover.png"
+    twitter_handle: "@amit_kolambikar"
+    google_analytics_id: "UA-89950526-1"
+    domain: "amitkolambikar.com"
+    root: "amitkolambikar.com"
+
+name: "Amit Kolambikar"
+markdown: redcarpt
+highlighter: pygments
+permalink: "/:categories/:title/"
+
+gems:
+  - jekyll-redirect-from
+
+collections:
+  talks:
+    output: false
+    permalink: /:collection/:title/
+  writing:
+    output: true
+    permalink: /:collection/:title/
+  projects:
+    output: true
+    permalink: /:collection/:title/
+  hackathons:
+    output: true
+    permalink: /:collection/:title/
+  travel:
+    output: true
+    permalink: /:collection/:title/
+  teams:
+    output: false
+    permalink: /:collection/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+      hero_style: normal
+  -
+    scope:
+      path: ""
+      type: writing
+    values:
+      layout: blog_post
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: blog_post
+  -
+    scope:
+      path: ""
+      type: hackathons
+    values:
+      layout: blog_post
+  -
+    scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      hero_style: normal
+      cta: Check it out
+      related_posts: talks
+  -
+    scope:
+      path: ""
+      type: travel
+    values:
+      layout: trip
+      hero_style: full_bleed
+  -
+    scope:
+      path: ""
+      type: teams
+    values:
+      layout: team
+      hero_style: normal
+      related_posts: teams
+
+exclude:
+  - node_modules
+  - Gulpfile.js
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - LICENSE.md

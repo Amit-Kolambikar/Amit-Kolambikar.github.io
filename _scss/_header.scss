@@ -1,0 +1,59 @@
+header, footer {
+  background-color: $lighter-gray;
+}
+
+footer {
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2 {
+    padding: 0;
+    text-indent: 0;
+  }
+
+  .pages {
+    display: none;
+    justify-content: space-between;
+  }
+}
+
+.path {
+  padding-left: 3.6rem;
+  text-indent: -3.6rem;
+
+  .slash {
+    padding: 0 0.5rem;
+  }
+
+  a {
+    @extend %subtle-link;
+  }
+}
+
+@media screen and (max-width: $tablet-portrait-max) {
+  footer .content {
+    display: flex;
+    justify-content: center;
+
+    .links, .pages {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 1rem 0 2rem;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $phone-landscape-max) {
+  .m-break {
+    @include clearfix;
+  }
+}

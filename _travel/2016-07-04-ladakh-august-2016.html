@@ -1,0 +1,25 @@
+---
+title: Ladakh & Himachal Pradesh , August 2016
+start_date: 2016-08-13
+end_date: 2016-08-22
+cities:
+  - Leh
+  - Ladakh
+  - Kasol
+  - Manali
+  - Shimla
+  - Delhi
+hero_image: travel/ladakh/ladakh.jpg
+featured_image: travel/ladakh/ladakh.jpg
+---
+
+<section class="text">
+    
+    <h5>Todo : Blog post </h5>
+{% for i in (0..21) %}
+{% assign x = 'travel/ladakh/' %}
+{% assign y = i | append : '.jpg' %}
+{% assign z = x | append: y %}
+{% include resimg.html src=z  class="anti-hero-img with-viewer" %}
+{% endfor %}
+</section>

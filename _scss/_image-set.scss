@@ -1,0 +1,33 @@
+figure + .image-set {
+  margin-top: -2.5rem;
+}
+
+.image-set {
+  margin: 3rem -0.75rem 0;
+
+  .large, .small {
+    align-items: flex-start;
+    display: flex;
+    font-size: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    figure {
+      margin: 0 0.75rem;
+      width: 50%;
+    }
+  }
+
+  + h5 {
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $phone-landscape-max) {
+  .image-set + h5 {
+    padding: 0;
+    text-align: left;
+  }
+}

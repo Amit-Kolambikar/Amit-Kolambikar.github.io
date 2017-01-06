@@ -1,0 +1,42 @@
+---
+layout: default
+---
+{% if page.hero_style == "full_bleed" %}
+    {% if page.hero_image %}
+        {% include resimg.html src=page.hero_image link=page.link class="anti-hero-img" %}
+    {% else %}
+        {% include resimg.html src=page.featured_image link=page.link class="anti-hero-img" %}
+    {% endif %}
+{% endif %}
+<div class="content custom-content">
+    <article>
+        {% if page.hero_style == "large" %}
+        <section>
+            {% if page.hero_image %}
+                {% include resimg.html src=page.hero_image link=page.link class="anti-hero-img" %}
+            {% else %}
+                {% include resimg.html src=page.featured_image link=page.link class="anti-hero-img"  %}
+            {% endif %}
+        </section>
+        {% endif %}
+        {% if page.hero_style == "normal" %}
+        <section class="text hero-image">
+            {% if page.hero_image %}
+                {% include resimg.html src=page.hero_image link=page.link class="anti-hero-img"  %}
+            {% else %}
+                {% include resimg.html src=page.featured_image link=page.link class="anti-hero-img"  %}
+            {% endif %}
+        </section>
+        {% endif %}
+
+        {{ content }}
+    </article>
+</div>
+{% if page.related_posts %}
+<div class="content">
+    {% assign col = site[page.related_posts] %}
+    {% assign url = "/" | append: page.related_posts | append: "/" %}
+    {% assign title = page.related_posts | capitalize %}
+    {% include collection.html title=title url=url collection=col exclude=page %}
+</div>
+{% endif %}

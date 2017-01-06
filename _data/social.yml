@@ -1,0 +1,15 @@
+-
+  action: Tweet
+  url: https://www.twitter.com/amit_kolambikar
+-
+  action: Code
+  url: https://github.com/amit-kolambikar
+-
+  action: LinkedIn
+  url: https://www.linkedin.com/in/amitkolambikar
+-
+  action: Poke
+  url: https://www.facebook.com/amit.kolambikar
+-
+  action: Send
+  url: mailto:amit007kolambikar@gmail.com

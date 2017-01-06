@@ -1,0 +1,19 @@
+---
+title: Goa , August 2016
+start_date: 2016-08-13
+end_date: 2016-08-22
+cities:
+  - Mapusa
+hero_image: travel/goa/goa.jpg
+featured_image: travel/goa/goa.jpg
+---
+
+<section class="text">
+<h5>Todo : blog post </h5>
+{% for i in (2..11) %}
+{% assign x = 'travel/goa/' %}
+{% assign y = i | append : '.jpg' %}
+{% assign z = x | append: y %}
+{% include resimg.html src=z  class="anti-hero-img with-viewer" %}
+{% endfor %}
+</section>
