@@ -2,7 +2,6 @@
 node_modules
 
 # Jekyll
-_site
 .jekyll-metadata
 
 # Responsive image output (resized images)

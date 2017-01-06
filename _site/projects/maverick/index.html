@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Maverick - AI Chat Bot</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Maverick is a chatbot that supports 4 different Environments : 
+
+	Weather Forecast Details
+	Star Wars Role playing Game
+	Cat - gifs (More fun stuff in v2) 
+	Dog - gifs (More fun stuff in v2)
+
+ Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
+ I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React.  I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
+View Demo
+ Contribute on GitHub." />
+    <meta name="robots" content="NOODP, index, follow" />
+    <meta itemprop="name" content="Maverick - AI Chat Bot">
+    <meta itemprop="description" content="Maverick is a chatbot that supports 4 different Environments : 
+
+	Weather Forecast Details
+	Star Wars Role playing Game
+	Cat - gifs (More fun stuff in v2) 
+	Dog - gifs (More fun stuff in v2)
+
+ Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
+ I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React.  I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
+View Demo
+ Contribute on GitHub.">
+    <meta itemprop="image" content="projects/bot.png">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@amit_kolambikar">
+    <meta name="twitter:title" content="Maverick - AI Chat Bot">
+    <meta name="twitter:description" content="Maverick is a chatbot that supports 4 different Environments : 
+
+	Weather Forecast Details
+	Star Wars Role playing Game
+	Cat - gifs (More fun stuff in v2) 
+	Dog - gifs (More fun stuff in v2)
+
+ Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
+ I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React.  I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
+View Demo
+ Contribute on GitHub.">
+    <meta name="twitter:creator" content="@amit_kolambikar">
+    <meta name="twitter:image:src" content="projects/bot.png">
+    <meta name="twitter:domain" content="amitkolambikar.com">
+    <!-- Open Graph data (Facebook) -->
+    <meta property="og:title" content="Maverick - AI Chat Bot" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="amitkolambikar.com/projects/maverick/" />
+    <meta property="og:image" content="amitkolambikar.com/img/res/800/projects/bot.png" />
+    <meta property="og:description" content="Maverick is a chatbot that supports 4 different Environments : 
+
+	Weather Forecast Details
+	Star Wars Role playing Game
+	Cat - gifs (More fun stuff in v2) 
+	Dog - gifs (More fun stuff in v2)
+
+ Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
+ I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React.  I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
+View Demo
+ Contribute on GitHub." />
+    <!-- Apple Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/favicon/apple-touch-icon-152x152.png" />
+    <!-- Standard Icons -->
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png" sizes="128x128" />
+    <!-- Microsoft Metadata -->
+    <meta name="application-name" content="Maverick - AI Chat Bot"/>
+    <meta name="msapplication-TileColor" content="" />
+    <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/img/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/img/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/img/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/img/favicon/mstile-310x310.png" />
+
+    <!-- Chrome Theme Color -->
+    <meta name="theme-color" content="">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,700|Inconsolata:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css" inline>
+    <!-- Google Analytics go here -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-89950526-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+
+    <div class="scrim"></div>
+    <header>
+    <div class="content">
+        <h1 class="path">
+            <span class="component"><a href="/">~</a></span>
+            <span class="slash">/</span>
+            <span class="component"><a href="/">Amit Kolambikar</a></span>
+            
+            <span class="slash">/</span>
+            <span class="component capitalize"><a href="/projects/">projects</a></span>
+            
+            
+            <span class="slash">/</span>
+            <br class="m-only">
+            <span class="component"><a href="/projects/maverick/">Maverick - AI Chat Bot</a></span>
+            
+        </h1>
+    </div>
+</header>
+
+
+<div class="content custom-content">
+    <article>
+        
+        
+        <section class="text hero-image">
+            
+                
+<a href='http://maverick.amitkolambikar.com/' >
+
+<figure class="progressive-image hero-image-img "
+        data-small="/img/res/400/projects/bot.png"
+        data-medium="/img/res/800/projects/bot.png"
+        data-large="/img/res/1600/projects/bot.png"
+        data-raw="/img/res/raw/projects/bot.png">
+    <div class="aspect-ratio-holder"
+        style="padding-bottom: 52.16484089723527%"></div>
+    <img class="thumbnail"
+        src="/img/res/20/projects/bot.png"alt="">
+</figure>
+
+</a>
+
+
+            
+        </section>
+        
+
+        <section class="text">
+    
+    <h5 class="timestamp">Published on November 14, 2016.</h5>
+    
+    <p> Maverick is a chatbot that supports 4 different Environments : <br>
+<ul>
+	<li>Weather Forecast Details</li>
+	<li>Star Wars Role playing Game</li>
+	<li>Cat - gifs (More fun stuff in v2) </li>
+	<li>Dog - gifs (More fun stuff in v2)</li>
+</ul>
+<br> Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
+<br> I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React. <br> I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
+<h3><a href="http://maverick.amitkolambikar.com/" target="_blank">View Demo</a></h3>
+ <a href="https://github.com/Amit-Kolambikar/Maverick" target="_blank">Contribute on GitHub</a>.</p>
+
+    
+</section>
+
+    </article>
+</div>
+
+
+<script type="text/javascript" src="/js/progressive-image.js"></script>
+<script type="text/javascript">
+    var figures = document.getElementsByClassName('progressive-image');
+    for (var i = 0; i < figures.length; i++) {
+        new ProgressiveImage(figures[i]);
+    }
+</script>
+<footer>
+    <div class="content">
+        <div class="pages">
+            <h2 class="path">
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="/writing/">Writing</a>
+                </span>
+            </h2>
+         <!--    <h2 class="path">
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="/talks/">Talks</a>
+                </span>
+            </h2> -->
+            <h2 class="path">
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="/travel/">Travel</a>
+                </span>
+            </h2>
+            <!-- <h2 class="path">
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="/lists/">Lists</a>
+                </span>
+            </h2> -->
+            <h2 class="path">
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="/projects/">Projects</a>
+                </span>
+            </h2>
+           <!--  <h2 class="path">
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="/teams/">Teams</a>
+                </span>
+            </h2> -->
+        </div>
+        <div class="links">
+            
+            <h2 class="path">
+                <span class="component">.</span>
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="https://www.twitter.com/amit_kolambikar" target="_blank">Tweet</a>
+                </span>
+            </h2>
+            
+            <h2 class="path">
+                <span class="component">.</span>
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="https://github.com/amit-kolambikar" target="_blank">Code</a>
+                </span>
+            </h2>
+            
+            <h2 class="path">
+                <span class="component">.</span>
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="https://www.linkedin.com/in/amitkolambikar" target="_blank">LinkedIn</a>
+                </span>
+            </h2>
+            
+            <h2 class="path">
+                <span class="component">.</span>
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="https://www.facebook.com/amit.kolambikar" target="_blank">Poke</a>
+                </span>
+            </h2>
+            
+            <h2 class="path">
+                <span class="component">.</span>
+                <span class="slash">/</span>
+                <span class="component">
+                    <a href="mailto:amit007kolambikar@gmail.com" target="_blank">Send</a>
+                </span>
+            </h2>
+            
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
