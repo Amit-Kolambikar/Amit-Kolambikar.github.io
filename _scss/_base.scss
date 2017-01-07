@@ -12,13 +12,13 @@ html, body {
 h1, h2, h3, h4, h5, h6 {
   a {
     border-bottom: 2px solid $black;
-    color: $black;
+    color:$black;
     text-decoration: none;
-    transition: 0.3s ease all;
+    transition: 0.3s linear all;
 
     &:hover {
       border-bottom: 2px solid $medium-gray;
-      color: $medium-gray;
+      color:#0D47A1 !important;
       text-decoration: none;
     }
   }
@@ -28,15 +28,14 @@ p a, article h2 a {
   border: 0;
   color: $black;
   text-decoration: underline;
-  transition: 0.3s ease color;
+  transition: 0.3s linear all;
 
   &:hover {
     border: 0;
-    color: $medium-gray;
+    color: #0D47A1 !important;
     text-decoration: underline;
   }
 }
-
 %subtle-link {
   border-bottom: 2px solid $transparent;
   transition: 0.3s ease border-color;
