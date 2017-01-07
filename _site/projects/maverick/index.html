@@ -2,68 +2,32 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Maverick - AI Chat Bot</title>
+    <title>Maverick - AI Chatbot (Recommend)</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Maverick is a chatbot that supports 4 different Environments : 
-
-	Weather Forecast Details
-	Star Wars Role playing Game
-	Cat - gifs (More fun stuff in v2) 
-	Dog - gifs (More fun stuff in v2)
-
- Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
- I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React.  I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
-View Demo
- Contribute on GitHub." />
+    <meta name="description" content="Inspiration
+This project is inspired by Facebook's http://poncho.is/ chat application that fetches weather details for the specified location. I wanted to understand how Natural Language Processing (NLP) interprets user input and AI performs some action with it. Initally I started with https://github.com/NaturalNode/natural Natural to process user's input but handling different set of responses became harder. Then i tried a few AI services( wit.ai , api.ai , recast.ai ). Wit needed some server side configuration as they didn't support none-cors request. Api.ai required a premium plan, ended up using Recast.ai - Also it was the easiest to set up and get started with. They have some great blog resources too." />
     <meta name="robots" content="NOODP, index, follow" />
-    <meta itemprop="name" content="Maverick - AI Chat Bot">
-    <meta itemprop="description" content="Maverick is a chatbot that supports 4 different Environments : 
-
-	Weather Forecast Details
-	Star Wars Role playing Game
-	Cat - gifs (More fun stuff in v2) 
-	Dog - gifs (More fun stuff in v2)
-
- Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
- I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React.  I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
-View Demo
- Contribute on GitHub.">
+    <meta itemprop="name" content="Maverick - AI Chatbot (Recommend)">
+    <meta itemprop="description" content="Inspiration
+This project is inspired by Facebook's http://poncho.is/ chat application that fetches weather details for the specified location. I wanted to understand how Natural Language Processing (NLP) interprets user input and AI performs some action with it. Initally I started with https://github.com/NaturalNode/natural Natural to process user's input but handling different set of responses became harder. Then i tried a few AI services( wit.ai , api.ai , recast.ai ). Wit needed some server side configuration as they didn't support none-cors request. Api.ai required a premium plan, ended up using Recast.ai - Also it was the easiest to set up and get started with. They have some great blog resources too.">
     <meta itemprop="image" content="projects/bot.png">
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@amit_kolambikar">
-    <meta name="twitter:title" content="Maverick - AI Chat Bot">
-    <meta name="twitter:description" content="Maverick is a chatbot that supports 4 different Environments : 
-
-	Weather Forecast Details
-	Star Wars Role playing Game
-	Cat - gifs (More fun stuff in v2) 
-	Dog - gifs (More fun stuff in v2)
-
- Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
- I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React.  I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
-View Demo
- Contribute on GitHub.">
+    <meta name="twitter:title" content="Maverick - AI Chatbot (Recommend)">
+    <meta name="twitter:description" content="Inspiration
+This project is inspired by Facebook's http://poncho.is/ chat application that fetches weather details for the specified location. I wanted to understand how Natural Language Processing (NLP) interprets user input and AI performs some action with it. Initally I started with https://github.com/NaturalNode/natural Natural to process user's input but handling different set of responses became harder. Then i tried a few AI services( wit.ai , api.ai , recast.ai ). Wit needed some server side configuration as they didn't support none-cors request. Api.ai required a premium plan, ended up using Recast.ai - Also it was the easiest to set up and get started with. They have some great blog resources too.">
     <meta name="twitter:creator" content="@amit_kolambikar">
     <meta name="twitter:image:src" content="projects/bot.png">
     <meta name="twitter:domain" content="amitkolambikar.com">
     <!-- Open Graph data (Facebook) -->
-    <meta property="og:title" content="Maverick - AI Chat Bot" />
+    <meta property="og:title" content="Maverick - AI Chatbot (Recommend)" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="amitkolambikar.com/projects/maverick/" />
     <meta property="og:image" content="amitkolambikar.com/img/res/800/projects/bot.png" />
-    <meta property="og:description" content="Maverick is a chatbot that supports 4 different Environments : 
-
-	Weather Forecast Details
-	Star Wars Role playing Game
-	Cat - gifs (More fun stuff in v2) 
-	Dog - gifs (More fun stuff in v2)
-
- Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
- I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React.  I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
-View Demo
- Contribute on GitHub." />
+    <meta property="og:description" content="Inspiration
+This project is inspired by Facebook's http://poncho.is/ chat application that fetches weather details for the specified location. I wanted to understand how Natural Language Processing (NLP) interprets user input and AI performs some action with it. Initally I started with https://github.com/NaturalNode/natural Natural to process user's input but handling different set of responses became harder. Then i tried a few AI services( wit.ai , api.ai , recast.ai ). Wit needed some server side configuration as they didn't support none-cors request. Api.ai required a premium plan, ended up using Recast.ai - Also it was the easiest to set up and get started with. They have some great blog resources too." />
     <!-- Apple Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/favicon/apple-touch-icon-114x114.png" />
@@ -80,7 +44,7 @@ View Demo
     <link rel="icon" type="image/png" href="/img/favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="/img/favicon/favicon-128.png" sizes="128x128" />
     <!-- Microsoft Metadata -->
-    <meta name="application-name" content="Maverick - AI Chat Bot"/>
+    <meta name="application-name" content="Maverick - AI Chatbot (Recommend)"/>
     <meta name="msapplication-TileColor" content="" />
     <meta name="msapplication-TileImage" content="/img/favicon/mstile-144x144.png" />
     <meta name="msapplication-square70x70logo" content="/img/favicon/mstile-70x70.png" />
@@ -121,7 +85,7 @@ View Demo
             
             <span class="slash">/</span>
             <br class="m-only">
-            <span class="component"><a href="/projects/maverick/">Maverick - AI Chat Bot</a></span>
+            <span class="component"><a href="/projects/maverick/">Maverick - AI Chatbot (Recommend)</a></span>
             
         </h1>
     </div>
@@ -159,16 +123,35 @@ View Demo
     
     <h5 class="timestamp">Published on November 14, 2016.</h5>
     
-    <p> Maverick is a chatbot that supports 4 different Environments : <br>
+    <div class="mdview"><h3 id="inspiration">Inspiration</h3>
+<p>This project is inspired by Facebook's <a href="http://poncho.is/">http://poncho.is/</a> chat application that fetches weather details for the specified location. I wanted to understand how Natural Language Processing (NLP) interprets user input and AI performs some action with it. Initally I started with <a href="https://github.com/NaturalNode/natural">https://github.com/NaturalNode/natural</a> Natural to process user's input but handling different set of responses became harder. Then i tried a few AI services( wit.ai , api.ai , recast.ai ). Wit needed some server side configuration as they didn't support none-cors request. Api.ai required a premium plan, ended up using Recast.ai - Also it was the easiest to set up and get started with. They have some great blog resources too.   </p>
+<h3 id="what-it-does">What it does</h3>
+<p>This app is divided into 4 environments :</p>
 <ul>
-	<li>Weather Forecast Details</li>
-	<li>Star Wars Role playing Game</li>
-	<li>Cat - gifs (More fun stuff in v2) </li>
-	<li>Dog - gifs (More fun stuff in v2)</li>
+<li><p>The Maverick environment is responsible to handle different weather requests.</p>
+</li>
+<li><p>Star Wars is a role playing game similar to <a href="https://github.com/RecastAI/starwarsbot">https://github.com/RecastAI/starwarsbot</a>. I tweaked it to support more set of inputs.</p>
+</li>
+<li><p>Cats and Dogs - meow and bark back respectively and they fetch random gifs from giphy.</p>
+</li>
 </ul>
-<br> Its a chat application that recieves the input from user - interprets it - if its in a valid language - perform appropriate actions. The user's input is processed through Natural Language Processing of recast.ai that further learns and grows on its own.
-<br> I built this using ReactJS and Material Design Lite. This was a fun project - there were certain complications of file structure and setting of memory objects so that the converstation is on the same message thread. At first I was going to build a basic one - weather chatbot but it was pretty easy and less challenging. Scaling it to support 4 different Environment helped me get better understanding of how the state operates in React. <br> I plan on restructuring the codebase and using Redux to manage the state - in v2. Feel free to leave me any feedback on the github page or through email/tweet.
-<h3><a href="http://maverick.amitkolambikar.com/" target="_blank">View Demo</a></h3>
+<h3 id="learning">Learning</h3>
+<ul>
+<li>Understanding of React states and top-down dataflow.</li>
+<li>Separation of logical and presentational components. </li>
+<li>One state object passed to relevant child components. </li>
+<li>Brief understanding NLP and AI concepts.</li>
+</ul>
+<h3 id="what-s-next">What's next</h3>
+<ul>
+<li>Support more operations.</li>
+<li>Optimize responses - Dont fetch weather for the second time if we already have it.</li>
+<li>Support complex AI logic - something with A* algorithm.</li>
+<li>Better bot responses.</li>
+</ul>
+<h3 id="-a-href-http-maverick-amitkolambikar-com-target-_blank-demo-a-"><a href="http://maverick.amitkolambikar.com/" target="_blank">Demo</a></h3>
+</div>
+<br>	
  <a href="https://github.com/Amit-Kolambikar/Maverick" target="_blank">Contribute on GitHub</a>.</p>
 
     
