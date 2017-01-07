@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
     &:hover {
       border-bottom: 2px solid $medium-gray;
-      color:$hoverColor !important;
+      color:$hoverColor;
       text-decoration: none;
     }
   }
@@ -32,7 +32,7 @@ p a, article h2 a {
 
   &:hover {
     border: 0;
-    color: $hoverColor !important;
+    color: $hoverColor;
     text-decoration: underline;
   }
 }
@@ -42,7 +42,7 @@ p a, article h2 a {
 
   &:hover {
     border-color: $black;
-    color: $hoverColor !important;
+    color: $hoverColor;
   }
 }
 
